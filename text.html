@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+h5{text-align:right}
+</style>
+</head>
+<body>
+<script>
+var sec = 15;
+var time = setInterval(myTimer, 1000);
+
+function myTimer() {
+    document.getElementById('timer').innerHTML = sec + "sec left";
+    sec--;
+    if (sec == -1) {
+        clearInterval(time);
+     window.location.replace("thnk.html");
+
+      
+      
+
+        }
+}
+</script>
+<h5>Time : <span id="timer"></span></h5>
+<form action="//www.html.am/html-codes/textboxes/submitted.cfm">
+<textarea name="myTextBox" cols="50" rows="5">
+Enter some text...
+</textarea>
+<br />
+<input type="submit" />
+</form>
+
+</body>
+</html>
